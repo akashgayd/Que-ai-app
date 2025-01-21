@@ -8,24 +8,75 @@ body{
   align-items: center;
 }
 /* Container for the exam */
+
+
+
 .exam-container {
-  text-align: center;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
 }
 
-/* Header for question */
+.question-box {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .question-header {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
 }
 
-/* Question text styling */
 .question-text {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #555;
 }
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.option-button:hover {
+  background-color: #45a049;
+}
+
+.warnings {
+  font-size: 16px;
+  color: red;
+  margin-top: 20px;
+}
+
+.camera-container {
+  margin-top: 20px;
+}
+
+.camera-feed {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
 
 /* Option buttons styling */
 .option-button {
